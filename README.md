@@ -1,5 +1,6 @@
 # screens-behavioural-box
- a behavioural box where all walls are screens
+ ![]( https://github.com/Sussex-Neuroscience/screens-behavioural-box/blob/main/Screens_behavioural_box.PNG)
+
  
  links to parts:
  
