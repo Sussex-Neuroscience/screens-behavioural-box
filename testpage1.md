@@ -11,7 +11,7 @@
 [Multi Angle Vice]:Parts.yaml#vice
 [Liquid Adhesive]:Parts.yaml#Adhesive
  [2mm Hex key]:Parts.yaml#2mmHexkey
-
+[3/4 retina display]:Parts.yaml#Display
 
 # Building the box
 
@@ -52,38 +52,39 @@
      ![](images/Square_framewithpillars.PNG)
 
 
- 3. Slide the two feeding panels on to the opposite end of the base as shown in the diagram.
-       ![](images/Base_feedingpanel.PNG)
+ 3. Slide the two [Feeding_panel](models/Feeding_panel.svg)   on to the opposite ends of the [base](models/Base.svg) as shown in the diagram.
+      
+ ![](images/Base_feedingpanel.PNG)
 
 
- 4. Slide the above assembly on to the makerbeam xl and corners assembly as shown.
+ 4. Slide the assembly made in (step 3) on to the assembly made in (step2) as shown.
     ![](images/Ass1.PNG)
 
- 5. On the opposite sides of the box, slide the Filler panels. 
+ 5. On the opposite sides of the assembly in (step 4), slide the  [Filler_panel](models/Excrete_side.svg). 
    ![](images/Ass2.PNG)
 
- 6. snap fit the screen sliders on ot the pillars on all corners.
+ 6. Snap fit the screen sliders on the aseembly pillars. 
    ![](images/Ass3.PNG)
 
-7. Slide the screen on all the corners.Start by sliding in the base first at an angle as shown  
+7. Slide the [3/4 retina display]{qty:4} on all the corners.Start by sliding in the base first at an angle as shown  
    ![](images/Ass4.PNG)
 
-8. Streigthen up the screen and slightly nudge the pillars side ways to allow the screen to streighten up. 
+8. Straigthen up the screen and slightly nudge the pillars side ways to allow the screen to stand upright. 
     
  ![](images/Ass4.1.PNG)
 
-9. Reallign the pillars to fit the scrren into the screen sliders slots. 
+9. Reallign the pillars to fit the screen into the screen sliders slots. 
   ![](images/Ass4.2.PNG)
 
-10. Repeat steps 6 to 8 to place all the screens. once all the screens are in place. The final assembly should look like the diagram below. 
+10. Repeat (steps 6 to 8) to place all the screens. once all the screens are in place. The final assembly should look like the diagram below. 
      
     ![](images/Assembled_screens.PNG)
 
-11. Place the arcyclyic lid on a flat surface and allign the printed hing plus latch with their respective holes as shown.
+11. Place the  [Lid and door](models/lid.svg)  on a flat surface and allign the printed hing plus latch with their respective holes as shown.
      
        ![](images/lid1.PNG) 
 
-12. Align the fastner pins in place with the hole and press fit them to fasten the lid and latch on to the lid. 
+12. Align the fastener pins in place with the hole and press fit them to fasten the lid and latch on to the lid. 
 
    ![](images/lid2.PNG)
 
