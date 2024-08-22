@@ -1,6 +1,16 @@
 Affiliation: Sussex University
 Authors:
-- Andre Maia Chagas
-- Solomon Gitau Ngotho
+  - Andre Maia Chagas
+  - Solomon Gitau Ngotho
+CustomCategories:
+  machine:
+    DisplayName: Machines
+    Reuse: false
+  material:
+    DisplayName: Materials
+    Reuse: false
 Email: s.n.ngotho@sussex.ac.uk
+HoverColor: '#555555'
 License: CERN-OHL-1.2
+PrimaryColor: '#f1502f'
+SecondaryColor: '#cccccc'
