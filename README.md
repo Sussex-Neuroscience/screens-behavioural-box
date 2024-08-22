@@ -1,7 +1,7 @@
 # Screens behavioural box
 
 
-![](images/Final.PNG)
+![](documentation/images/Final.PNG)
 
 
 The box is used to research on mice reaction to different scenes played on the screens inside the box.
