@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Screens behavioural box</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./static/Logo/favicon.ico" />
+<link rel="icon" type="image/png" href="./static/Logo/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="./static/Logo/favicon-16x16.png" sizes="16x16" />
+
+    <link href="./static/base-style.css" rel="stylesheet">
+    <link href="./static/site-style.css" rel="stylesheet">
+                <script type="text/javascript" src="./static/3d-viewer.js"></script>
+        <style>
+  :root {
+    --primary-color: #f1502f;
+  }
+</style>
+<style>
+  :root {
+    --secondary-color: #cccccc;
+  }
+</style>
+<style>
+  :root {
+    --hover-color: #555555;
+}
+</style>
+    
+        <script type="text/javascript" src="./static/search.js" defer=""></script>
+    </head>
+<body>
+<header class="site-header">
+    <div class="wrapper header-wrapper" >
+        <div class=header-text>
+   
+    <h1 class="site-title">Screens behavioural box</h1>
+   
+    <p class="author">by Solomon Gitau Ngotho and Andre Maia Chagas</p>
+    <p class="affiliation">University of Sussex</p>
+</div>
+            </div>
+</header>
+<div class="page-content">
+            <div>
+            <nav class="sidebar">
+                <a href="#" class="menu-icon">
+                <svg viewBox="0 0 18 15">
+                    <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+                    <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+                    <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+                </svg>
+                </a>
+                <ul class="nav-list">
+                <li>
+    <a class="navhome" href="./">
+        Screens behavioural box
+    </a>
+</li>
+<li id="nav-search" :class="focused && searchTerm.length > 0 ? 'search-result-popout' : 'search'" v-scope v-on:vue:mounted="mounted('./')">
+  <input
+    type="text"
+    placeholder="Search..."
+    v-on:input="search($event.target.value)"
+    v-on:keypress="handleKeyPress"
+    v-on:keyup.esc="$event.target.blur()"
+    v-on:focus="handleFocus"
+    v-on:blur="handleBlur"
+    :value="searchTerm" />
+    <div class="search-results" v-if="focused && searchTerm.length > 0">
+        <div v-if="searchResults.length > 0">Results:</div>
+        <div v-if="searchResults.length === 0">No results.</div>
+        <template v-for="(result, index) in searchResults">
+            <li>
+                <a class="search-result" :href="`./${result.path}.html`">
+               <span v-for="crumb in result.breadCrumbs.slice(0, -1)">
+                ${crumb + ' > '}
+                </span>
+               ${result.title || result.breadCrumbs[result.breadCrumbs.length - 1]}
+                <p>
+                    <span v-for="node in result.highlightChars" :class="node.mark ? 'highlight' : ''" >${node.chars}</span>
+                </p>
+                </a>
+            </li>
+        </template>
+    </div>
+</li>
+<li class="not-active">
+    <a class="not-active" href="./index_BOM.html">
+        Bill of Materials
+    </a>
+    </li>
+<li class="active">
+    <a class="active" href="./testpage1.html">
+        Building the box
+    </a>
+    </li>
+<li class="not-active">
+    <a class="not-active" href="./testpage2.html">
+        Electronics
+    </a>
+    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="wrapper">
+    <h1 id="building-the-box">Building the box</h1>
+<div class="pagebom">
+<h3 id="parts">Parts</h3>
+<ul>
+<li>20 <a Class="bom" href="Parts/M3X8mmSocketcap.html">M3x8 socket cap screw</a> </li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>1 <a Class="bom" href="Parts/Hacksaw.html">150mm mini hacksaw</a> </li>
+<li>1 <a Class="bom" href="Parts/2mmHexkey.html">2mm Hex key</a> </li>
+<li>1 <a Class="bom" href="Parts/M3tapset.html">M3 tap set</a> </li>
+<li>1 <a Class="bom" href="Parts/Tapwrench.html">tap wrench</a> </li>
+</ul>
+<h3 id="machines">Machines</h3>
+<ul>
+<li>1 <a Class="bom" href="Parts/3dprinter.html">3d printer</a> </li>
+<li>1 <a Class="bom" href="Parts/Lasercutter.html">Laser cutter</a> </li>
+<li>1 <a Class="bom" href="Parts/vice.html">Multi Angle Vice</a> </li>
+</ul>
+<h3 id="materials">Materials</h3>
+<ul>
+<li>1 <a Class="bom" href="Parts/ClearSheet.html">clear plastic sheet</a> </li>
+<li>1 <a Class="bom" href="Parts/Adhesive.html">Liquid Adhesive</a> </li>
+<li>1 <a Class="bom" href="Parts/MakerBeamXL.html">maker beam XL</a> </li>
+<li>80 g of <a Class="bom" href="Parts/PLAfilament.html">PLA filament</a> </li>
+</ul>
+</div>
+<div class="info-block">
+<p>you can skip step 1 and 2 if you bought the parts</p>
+</div>
+<h2 class="page-step" id="printed-parts">Step 1: Printed parts</h2>
+<ul>
+<li>To accomplish this section you will need a <a href="Parts/3dprinter.html">3d printer</a> and <a href="Parts/PLAfilament.html">PLA filament</a> to print </li>
+</ul>
+<noscript><a href="documentation_ouput/models/Allparts.stl">.</a></noscript>
+<p><gb3d-viewer src="documentation_ouput/models/Allparts.stl"></gb3d-viewer></p>
+<h2 class="page-step" id="laser-cut-parts">Step 2: Laser cut parts</h2>
+<ul>
+<li>This section requires a <a href="Parts/Lasercutter.html">Laser cutter</a> and <a href="Parts/ClearSheet.html">clear plastic sheet</a> to produce the following parts:<ol>
+<li>1pc <a href="documentation_ouput/models/lid.svg" title="">Lid and door</a>           </li>
+<li>2pcs <a href="documentation_ouput/models/Feeding_panel.svg" title="">Feeding_panel</a>            </li>
+<li>1pc <a href="documentation_ouput/models/Base.svg" title="">base</a></li>
+<li>2pcs <a href="documentation_ouput/models/Excrete_side.svg" title="">Filler_panel</a></li>
+<li>1pc <a href="documentation_ouput/models/Excrete_bottom.svg" title="">Excretion_base</a></li>
+<li>2pcs <a href="documentation_ouput/models/Excrete_side.svg" title="">Excretion_side</a></li>
+<li>2pcs <a href="documentation_ouput/models/Excrete_front_back.svg" title="">Excretion_front</a></li>
+</ol>
+</li>
+</ul>
+<h2 class="page-step" id="prepare-the-makerbeam-xl">Step 3: Prepare the Makerbeam XL</h2>
+<ul>
+<li>Cut 8 pcs 210mm long form the <a href="Parts/MakerBeamXL.html">maker beam XL</a>  using the <a href="Parts/Hacksaw.html">150mm mini hacksaw</a>.</li>
+<li>Assemble the the first <a href="Parts/M3tapset.html">M3 tap set</a> from the taping set to the <a href="Parts/Tapwrench.html">tap wrench</a>.</li>
+<li>Tap the holes on the ends of the maker beam xl pieces that you had cut  ealier.</li>
+</ul>
+<h2 class="page-step" id="assembly">Step 4: Assembly</h2>
+<ul>
+<li>At this point you should have all the parts ready for assembly. Follow the steps to assemble the box:</li>
+</ul>
+<ol>
+<li>
+<p>Assemble 4 makerbeam xl and 4 3d printed corners to make a square frame. Using <a href="Parts/M3X8mmSocketcap.html">M3x8 socket cap screw</a> fasten the corners to the maker beam xl uisng <a href="Parts/2mmHexkey.html">2mm Hex key</a>. <br />
+<img alt="" src="images/Square_frame.PNG" title="" /></p>
+</li>
+<li>
+<p>Fasten 4 more maker beam xl horizontally on to the sqaure frame made in (step 1) using <a href="Parts/M3X8mmSocketcap.html">M3x8 socket cap screw</a>.<br />
+<img alt="" src="images/Square_framewithpillars.PNG" title="" /></p>
+</li>
+<li>
+<p>Slide the two feeding panels on to the opposite end of the base as shown in the diagram.
+       <img alt="" src="images/Base_feedingpanel.PNG" title="" /></p>
+</li>
+<li>
+<p>Slide the above assembly on to the makerbeam xl and corners assembly as shown.
+    <img alt="" src="images/Ass1.PNG" title="" /></p>
+</li>
+<li>
+<p>On the opposite sides of the box, slide the Filler panels. 
+   <img alt="" src="images/Ass2.PNG" title="" /></p>
+</li>
+<li>
+<p>snap fit the screen sliders on ot the pillars on all corners.
+   <img alt="" src="images/Ass3.PNG" title="" /></p>
+</li>
+<li>
+<p>Slide the screen on all the corners.Start by sliding in the base first at an angle as shown<br />
+<img alt="" src="images/Ass4.PNG" title="" /></p>
+</li>
+<li>
+<p>Streigthen up the screen and slightly nudge the pillars side ways to allow the screen to streighten up. </p>
+</li>
+</ol>
+<p><img alt="" src="images/Ass4.1.PNG" title="" /></p>
+<ol start="9">
+<li>
+<p>Reallign the pillars to fit the scrren into the screen sliders slots. 
+  <img alt="" src="images/Ass4.2.PNG" title="" /></p>
+</li>
+<li>
+<p>Repeat steps 6 to 8 to place all the screens. once all the screens are in place. The final assembly should look like the diagram below. </p>
+<p><img alt="" src="images/Assembled_screens.PNG" title="" /></p>
+</li>
+<li>
+<p>Place the arcyclyic lid on a flat surface and allign the printed hing plus latch with their respective holes as shown.</p>
+<p><img alt="" src="images/lid1.PNG" title="" /> </p>
+</li>
+<li>
+<p>Align the fastner pins in place with the hole and press fit them to fasten the lid and latch on to the lid. </p>
+</li>
+</ol>
+<p><img alt="" src="images/lid2.PNG" title="" /></p>
+<ul>
+<li>Now the lid has all its aceesories, its time to attach it to the top of the box.</li>
+</ul>
+<ol start="13">
+<li>Take <a href="Parts/M3X8mmSocketcap.html">M3x8 socket cap screw</a> and using a <a href="Parts/vice.html">Multi Angle Vice</a> press the 3d printed thumbwheels on to the M3x8 socket cap screws..</li>
+</ol>
+<p><img alt="" src="images/thumb_screw.PNG" title="" /></p>
+<ol start="14">
+<li>place the assembled lid on top of the box and fasten it with the assembled M3x8 socket cap screws.</li>
+</ol>
+<p><img alt="" src="images/fullass1.PNG" title="" /></p>
+<ol start="15">
+<li>using <a href="Parts/Adhesive.html">Liquid Adhesive</a> assemble the excretion panel and wait for it to dry. </li>
+</ol>
+<p><img alt="" src="images/Excrete_tray.PNG" title="" /></p>
+<ol start="16">
+<li>Once its dry slide it in to the space on the bottom of the box.</li>
+</ol>
+<p><img alt="" src="images/Final.PNG" title="" /></p>
+<p>NB: The assembly is ready for use. The next steps will be to connet  the electronics.</p>
+<!-- GitBuilding Nav -->
+<hr />
+<p><a href="index_BOM.html">Previous page</a> | <a href="testpage2.html">Next page</a></p>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="wrapper">
+        <a target="_blank" rel="noopener noreferrer" href="https://gitbuilding.io">
+    <img class="icon" src="./static/Logo/GitBuilding500x.png" alt="GitBuilding logo">
+    <span class="doc-info">Documentation powered by GitBuilding</span>
+</a>
+    <p class="author">©2024 Solomon Gitau Ngotho and Andre Maia Chagas</p>
+    <p class="email">Contact: <a href="mailto:s.n.ngotho@sussex.ac.uk">s.n.ngotho@sussex.ac.uk</a></p>
+    <p class="license">Screens behavioural box is released under <a href="license.html">CERN-OHL-S-2.0</a>.</p>
+
+    </div>
+</footer></body>
+</html>
