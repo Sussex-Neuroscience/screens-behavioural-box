@@ -20,18 +20,18 @@
 
 ## Printed parts {pagestep}
   + To accomplish this section you will need a [3d printer]{qty: 1, cat:machine} and [PLA filament]{Qty: 80g, cat: material} to print 
-![](models/Allparts.stl)
+![.](../hardware/models/Allparts.stl)
 
 
 ## Laser cut parts {pagestep}
  + This section requires a [Laser cutter]{qty: 1, cat:machine} and [clear plastic sheet]{Qty: 1, cat: material} to produce the following parts:
-     1. 1pc [Lid and door](models/lid.svg)           
-   2. 2pcs [Feeding_panel](models/Feeding_panel.svg)            
-   3. 1pc [base](models/Base.svg)
-   4.  2pcs [Filler_panel](models/Excrete_side.svg)
-  5. 1pc [Excretion_base](models/Excrete_bottom.svg)
-  6. 2pcs [Excretion_side](models/Excrete_side.svg)
-  7. 2pcs [Excretion_front](models/Excrete_front_back.svg)
+     1. 1pc [Lid and door](../hardware/models/lid.svg)           
+   2. 2pcs [Feeding_panel](../hardware/models/Feeding_panel.svg)            
+   3. 1pc [base](../hardware/models/Base.svg)
+   4.  2pcs [Filler_panel](../hardware/models/Excrete_side.svg)
+  5. 1pc [Excretion_base](../hardware/models/Excrete_bottom.svg)
+  6. 2pcs [Excretion_side](../hardware/models/Excrete_side.svg)
+  7. 2pcs [Excretion_front](../hardware/models/Excrete_front_back.svg)
 
 
 ## Prepare the Makerbeam XL {pagestep}
