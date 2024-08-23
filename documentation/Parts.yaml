@@ -1,4 +1,3 @@
-
 MakerBeamXL:
     Name: maker beam XL
     Description: >
@@ -133,7 +132,7 @@ Display:
             Link: https://www.adafruit.com/product/1751#technical-details
 
 Displaydriver:
-    Name: Displayy driver
+    Name: Display driver
     Description: >
          Qualia Bare Driver Board for LP097QX1 Display
     Specs:
@@ -188,3 +187,49 @@ Adhesive:
         RS:
             PartNo: 132-605
             Link: https://uk.rs-online.com/web/p/adhesives/0132605?gb=a
+
+
+cable:
+    Name: Display cable
+    Description: >
+        This cable provides a seamless connection to support ultra-high-definition (UHD) videos. 
+        This means you're assured clear, blur-free images and video.
+    Specs:
+        Type: male port
+        version: 1.4
+        size: 3m
+        Resolution: 8k
+    Suppliers:  
+        RS:
+            PartNo: 195-4910
+            Link: https://uk.rs-online.com/web/p/displayport-cables/1954910?gb=a    
+
+Adapter:
+    Name: Adapter 9V dc Output
+    Description: >
+        These highly reliable power supplies have output voltages from 5.0 V to 12.0 V and 
+        all feature a Class II construction.The range, which is available in both barrel 
+        jack and USB versions, also attributes universal input and fixed mains connectors.
+    Specs:
+      Type: plug-type G
+      Output v: 9V dc
+      Output I: 550mA
+      Power: 5W
+    Suppliers:  
+        RS:
+            PartNo: 121-7130
+            Link: https://uk.rs-online.com/web/p/ac-dc-adapters/1217130?gb=s
+
+tape:
+    Name: Black Hook & Loop Tape
+    Description: >
+        Velcro tape with adhesive on one side
+    Specs:
+       Width: 50mm
+       Length: 5m
+       Type: hook & loop
+       Color: black
+    Suppliers:  
+        RS:
+            PartNo: 196-1279
+            Link: https://uk.rs-online.com/web/p/hook-loop-tapes/1961279?gb=s

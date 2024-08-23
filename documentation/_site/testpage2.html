@@ -106,7 +106,40 @@
         </div>
         <div class="wrapper">
     <h1 id="electronics">Electronics</h1>
-<div class="pagebom"></div>
+<div class="pagebom">
+<h3 id="parts">Parts</h3>
+<ul>
+<li>1 <a Class="bom" href="Parts/Adapter.html">Adapter 9V dc Output</a> </li>
+<li>4 <a Class="bom" href="Parts/cable.html">Display cable</a> </li>
+<li>4 <a Class="bom" href="Parts/Displaydriver.html">Display driver</a> </li>
+</ul>
+<h3 id="materials">Materials</h3>
+<ul>
+<li>1 <a Class="bom" href="Parts/tape.html">Black Hook &amp; Loop Tape</a> </li>
+</ul>
+</div>
+<p>To easily connect and understand the eelectronics we will split it into two:
+1. Display driver connection
+2. Lick sensor</p>
+<h2 class="page-step" id="display-connection">Step 1: Display connection</h2>
+<ol>
+<li>Connet the display ribbon cable to the <a href="Parts/Displaydriver.html">Display driver</a></li>
+</ol>
+<p><img alt="" src="images/IMG_20240823_115346.jpg" title="" /></p>
+<ol start="2">
+<li>Secure the display driver with <a href="Parts/tape.html">Black Hook &amp; Loop Tape</a> on the bak of the display</li>
+</ol>
+<p><img alt="" src="images/IMG_20240823_115406.jpg" title="" /></p>
+<ol start="3">
+<li>connect the <a href="Parts/cable.html">Display cable</a> and the <a href="Parts/Adapter.html">Adapter 9V dc Output</a></li>
+</ol>
+<p><img alt="" src="images/IMG_20240823_140017.jpg" title="" /></p>
+<p>The display cable is conected to the computer to acquire the images and for anlaysis purposes.</p>
+<h2 class="page-step" id="lick-sensor">Step 2: Lick sensor</h2>
+<ul>
+<li>Its implimented using the Beehive board, which is a breakout board uising the esp32 as the microcontroller. The details can be found here: https://github.com/BeeHive-org/BeeHive.</li>
+<li>By simply taping into one of the touch sensor pins on the esp 32 you can be able to monitor licks the animal makes whenever you dispense a liquid.</li>
+</ul>
 <!-- GitBuilding Nav -->
 <hr />
 <p><a href="testpage1.html">Previous page</a></p>
