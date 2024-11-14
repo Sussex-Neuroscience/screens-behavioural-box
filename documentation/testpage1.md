@@ -25,8 +25,8 @@
 
 ## Laser cut parts {pagestep}
  + This section requires a [Laser cutter]{qty: 1, cat:machine} and [clear plastic sheet]{Qty: 1, cat: material} to produce the following parts:
-     1. 1pc [Lid and door](../hardware/models/lid.svg)           
-   2. 2pcs [Feeding_panel](../hardware/models/Feeding_panel.svg)            
+     1. 1pc [Lid and door](../hardware/models/lid.svg)        
+   2. 2pcs [Feeding_panel](../hardware/models/Feeding_panel.svg)           
    3. 1pc [base](../hardware/models/Base.svg)
    4.  2pcs [Filler_panel](../hardware/models/Excrete_side.svg)
   5. 1pc [Excretion_base](../hardware/models/Excrete_bottom.svg)
@@ -52,7 +52,7 @@
      ![](images/Square_framewithpillars.PNG)
 
 
- 3. Slide the two [Feeding_panel](models/Feeding_panel.svg)   on to the opposite ends of the [base](models/Base.svg) as shown in the diagram.
+ 3. Slide the two [Feeding_panel]   on to the opposite ends of the [base] as shown in the diagram.
       
  ![](images/Base_feedingpanel.PNG)
 
@@ -60,7 +60,7 @@
  4. Slide the assembly made in (step 3) on to the assembly made in (step2) as shown.
     ![](images/Ass1.PNG)
 
- 5. On the opposite sides of the assembly in (step 4), slide the  [Filler_panel](models/Excrete_side.svg). 
+ 5. On the opposite sides of the assembly in (step 4), slide the  [Filler_panel]
    ![](images/Ass2.PNG)
 
  6. Snap fit the screen sliders on the aseembly pillars. 
@@ -80,7 +80,7 @@
      
     ![](images/Assembled_screens.PNG)
 
-11. Place the  [Lid and door](models/lid.svg)  on a flat surface and allign the printed hing plus latch with their respective holes as shown.
+11. Place the  [Lid and door]  on a flat surface and allign the printed hing plus latch with their respective holes as shown.
      
        ![](images/lid1.PNG) 
 
